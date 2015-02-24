@@ -3,11 +3,14 @@
 </header>
 
 {{#if selectedLocation}}
-  {{google-maps latitude=selectedLocation.latitude longitude=selectedLocation.longitude}}
+  {{ google-maps latitude=selectedLocation.latitude longitude=selectedLocation.longitude }}
 {{/if}}
-{{view "select" content=locations value=selectedLocation optionLabelPath="content.name"}}
 
-{{#link-to 'info'}}Info{{/link-to}}
+{{ view "select"
+    content=model
+    value=selectedLocation
+    optionLabelPath="content.name"
+}}
 
 {{#each park in model}}
   {{#link-to 'info' park}}
