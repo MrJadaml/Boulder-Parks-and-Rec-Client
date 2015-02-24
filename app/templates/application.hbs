@@ -10,7 +10,9 @@
 {{#link-to 'info'}}Info{{/link-to}}
 
 {{#each park in model}}
-  {{#link-to 'park' park}}park.name{{/link-to}}
+  {{#link-to 'park' park}}
+    {{park.name}}
+  {{/link-to}}
 {{/each}}
 
 {{outlet}}

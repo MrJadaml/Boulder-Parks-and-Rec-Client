@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
+export default Ember.ArrayController.extend({
   // locations: [
   //   {id: 1, name: 'Aurora 7 Park', latitude: 40.003895, longitude: -105.245413 },
   //   {id: 2, name: 'Boulder Reservoir', latitude: 40.073885, longitude: -105.238069 },
