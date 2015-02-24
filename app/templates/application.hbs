@@ -1,10 +1,16 @@
 <header>
   <h2 id="title">Boulder Nature Play Parks</h2>
 </header>
-{{google-maps latitude="40.0331497" longitude="-105.268646"}}
-{{!#if selectedLocation}}
-  {{!google-maps latitude=selectedLocation.latitude longitude=selectedLocation.longitude}}
-{{!/if}}
-{{!view "select" content=locations value=selectedLocation optionLabelPath="content.name"}}
+
+{{#if selectedLocation}}
+  {{google-maps latitude=selectedLocation.latitude longitude=selectedLocation.longitude}}
+{{/if}}
+{{view "select" content=locations value=selectedLocation optionLabelPath="content.name"}}
+
 {{#link-to 'info'}}Info{{/link-to}}
+
+{{#each park in model}}
+  {{#link-to 'park' park}}park.name{{/link-to}}
+{{/each}}
+
 {{outlet}}
