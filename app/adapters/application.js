@@ -1,5 +1,4 @@
 import DS from 'ember-data';
 
-export default DS.ActiveModelAdapter.extend({
-  host: 'http://localhost:3000'
+export default DS.FixtureAdapter.extend({
 });
