@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -31,6 +32,7 @@ header {
 
 .info > header {
   text-align: center;
+  color: #fff;
   padding: 15px;
   font-size: 22px;
   border-bottom: 2px solid rgba(37, 37, 37, .4);

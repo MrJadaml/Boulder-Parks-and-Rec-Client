@@ -16,6 +16,11 @@ export default Ember.Component.extend({
 
   coordinatesChanged: function() {
     var map = this.get('map');
+    debugger
+
+    // var park = this.get(???)
+    //
+    // this.sendAction('action', park);
 
     if (map) map.setCenter(new google.maps.LatLng(this.get('latitude'), this.get('longitude')));
   }.observes('latitude', 'longitude')

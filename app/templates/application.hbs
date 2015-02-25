@@ -12,12 +12,17 @@
     optionLabelPath="content.name"
 }}
 
-
-
 {{outlet}}
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 {{#each park in model}}
   {{#link-to 'park' park}}
     {{park.name}}
   {{/link-to}}
+  <br>
 {{/each}}
