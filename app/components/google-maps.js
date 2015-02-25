@@ -19,4 +19,6 @@ export default Ember.Component.extend({
 
     if (map) map.setCenter(new google.maps.LatLng(this.get('latitude'), this.get('longitude')));
   }.observes('latitude', 'longitude')
+
+
 });
