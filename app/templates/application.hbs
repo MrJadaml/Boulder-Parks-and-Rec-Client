@@ -10,13 +10,14 @@
     content=model
     value=selectedLocation
     optionLabelPath="content.name"
-    
 }}
 
+
+
+{{outlet}}
+
 {{#each park in model}}
-  {{#link-to 'info' park}}
+  {{#link-to 'park' park}}
     {{park.name}}
   {{/link-to}}
 {{/each}}
-
-{{outlet}}
