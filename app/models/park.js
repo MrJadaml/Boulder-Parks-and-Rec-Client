@@ -9,7 +9,6 @@ var Park = DS.Model.extend({
   latitude: DS.attr('number'),
   longitude: DS.attr('number'),
   body: DS.attr('string'),
-  amenities: DS.attr('list'),
   image: DS.attr('string')
 });
 
