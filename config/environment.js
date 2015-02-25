@@ -16,7 +16,7 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-eval' http://maps.googleapis.com/ http://maps.gstatic.com/maps-api-v3/api/js/18/20/main.js http://mt0.googleapis.com http://mt1.googleapis.com http://maps.gstatic.com http://csi.gstatic.com ",
       'font-src': "'self' http://fonts.gstatic.com",
-      'connect-src': "'self'",
+      'connect-src': "'self' localhost:3000",
       'img-src': "'self' http://mt1.googleapis.com http://mt0.googleapis.com http://maps.googleapis.com http://maps.gstatic.com http://csi.gstatic.com",
       'style-src': "'self' http://fonts.googleapis.com http://fonts.googleapis.com",
       'media-src': "'self'"
