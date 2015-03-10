@@ -18,13 +18,12 @@ export default Ember.Component.extend({
     var map = this.get('map');
 
     // Components do not have access to the outer controller.
-     var ctrl = this.get('targetObject');
-     var selectedId = ctrl.get('selectedLocation');
-     ctrl.transitionToRoute('park', selectedId.get('id'));
-     var map = this.get('map');
+    var ctrl = this.get('targetObject');
+    var selectedId = ctrl.get('selectedLocation');
+    ctrl.transitionToRoute('park', selectedId.get('id'));
+    this.get('map');
 
     if (map) map.setCenter(new google.maps.LatLng(this.get('latitude'), this.get('longitude')));
   }.observes('latitude', 'longitude')
-
 
 });
