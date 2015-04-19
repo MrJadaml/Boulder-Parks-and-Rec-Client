@@ -1,15 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  actions: {
-    // reset: function () {
-    //   this.setProperties({
-    //     username: "",
-    //     password: "",
-    //     errorMessage: ""
-    //   });
-    // },
+    reset: function () {
+      this.setProperties({
+        username: "",
+        password: "",
+        errorMessage: ""
+      });
+    },
 
+  actions: {
     login: function () {
       var self = this, data = this.getProperties('username', 'password');
       self.set('errorMessage', null);
