@@ -15,7 +15,7 @@ module.exports = function(environment) {
     },
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' 'unsafe-eval' http://maps.googleapis.com/ http://maps.gstatic.com/maps-api-v3/api/js/18/20/main.js http://mt0.googleapis.com http://mt1.googleapis.com http://maps.gstatic.com http://csi.gstatic.com ",
+      'script-src': "'self' 'unsafe-eval' https://maps.googleapis.com/ https://maps.gstatic.com/maps-api-v3/api/js/18/20/main.js https://mt0.googleapis.com https://mt1.googleapis.com https://maps.gstatic.com https://csi.gstatic.com ",
       'font-src': "'self' http://fonts.gstatic.com",
       'connect-src': "'self' localhost:3000",
       'img-src': "'self' http://mt1.googleapis.com http://mt0.googleapis.com http://maps.googleapis.com http://maps.gstatic.com http://csi.gstatic.com",
